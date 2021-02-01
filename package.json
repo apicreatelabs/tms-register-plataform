@@ -1,0 +1,26 @@
+{
+  "name": "tms-register-plataform",
+  "version": "1.0.0",
+  "description": "Api Register Tecnical Micro Services\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apicreatelabs/tms-register-plataform.git"
+  },
+  "keywords": [
+    "ApiCreate",
+    "Tecnical",
+    "Microservices",
+    "Register",
+    "Plataform"
+  ],
+  "author": "Apicreate <apicreatecol@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apicreatelabs/tms-register-plataform/issues"
+  },
+  "homepage": "https://github.com/apicreatelabs/tms-register-plataform#readme"
+}
