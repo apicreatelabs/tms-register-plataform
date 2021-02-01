@@ -12,14 +12,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.post('/register',(req,res)=>{
-  let body = req.body;
-  console.log(body)
-  res.json("hola")
+const userRoute = require("./routes/user");
 
-})
+app.use("/users", userRoute);
 
 app.listen(port, () => {
   console.log(`API running for port ${port}`);
 });
-
