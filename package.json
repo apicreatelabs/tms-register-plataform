@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/apicreatelabs/tms-register-plataform/issues"
   },
-  "homepage": "https://github.com/apicreatelabs/tms-register-plataform#readme"
+  "homepage": "https://github.com/apicreatelabs/tms-register-plataform#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "swagger-ui-express": "^4.1.6",
+    "yamljs": "^0.3.0"
+  }
 }
