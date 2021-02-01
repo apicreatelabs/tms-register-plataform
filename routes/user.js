@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.post('/register',(req,res)=>{
     console.log(req.body);
-    res.json('hola')
+    res.json('hola');
 })
 
 module.exports = router;
