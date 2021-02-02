@@ -2,7 +2,12 @@ const  libFirebase = require('../utils/firebase');
 
 async function register(req,res){
     let data = req.data;
-
+    console.log("esto es data",data);
+    if(data.email === undefined){
+        res.status(400).json({error:{
+            description: "ole no me envie datos nulos"
+        }})
+    }
      let user = {
          data:{
          emailVerified: false,
