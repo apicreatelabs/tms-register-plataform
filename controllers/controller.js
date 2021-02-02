@@ -1,7 +1,7 @@
 let validateDataMiddleware = require('../middlewares/validateData')
-let userRegister =  require('./regsiter');
+let userController =  require('./usersController');
 
 exports.registerUser = [
     validateDataMiddleware.validateData,
-    userRegister.prueba
+    userController.register
 ];

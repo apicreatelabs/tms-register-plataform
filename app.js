@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-const userRoute = require("./routes/user");
+const userRoute = require("./routes/users");
 
 app.use("/users", userRoute);
 
