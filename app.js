@@ -16,6 +16,10 @@ const userRoute = require("./routes/users");
 
 app.use("/users", userRoute);
 
+app.post("/prueba",(req,res)=>{
+  res.json({msg:"ssdsds"})
+})
+
 app.listen(port, () => {
   console.log(`API running for port ${port}`);
 });
