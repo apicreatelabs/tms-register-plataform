@@ -1,17 +1,14 @@
 const  libFirebase = require('../utils/firebase');
+const validateRegsiter = require('./validations/users/register'); 
+const { check, validationResult } = require('express-validator');
+
 
 async function register(req,res){
     let data = req.data;
-    console.log("esto es data",data);
-    if(data.email === undefined){
-        res.status(400).json({error:{
-            description: "ole no me envie datos nulos"
-        }})
-    }
      let user = {
          data:{
          emailVerified: false,
-         phoneNumber: data.phoneNumber,
+         phoneNumber: `+${data.phoneNumber}`,
          password: data.password,
          displayName: `${data.name} ${data.lastName}`,
          photoURL: data.photoURL,
