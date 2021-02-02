@@ -1,7 +1,6 @@
 function validateData (req,res,next){
     //POST DELETE UPDATE GET
     let data = {}
-    console.log("el metodo es",req.method);
     switch (req.method) {
         case "GET":
             data =  req.query;
