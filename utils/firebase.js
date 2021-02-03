@@ -33,7 +33,9 @@ async function createUser(user) {
         let result = await admin.auth().createUser(user.data);
         let resultInsertDataBase = await dataBaseUser(result,user.otherInfo);
         if(resultInsertDataBase.error){
-          result = reresultInsertDataBasesult.error
+         //El error es que esta mal escrito xd
+         // result = reresultInsertDataBasesuser.error // este es el error
+          result =resultInsertDataBase.error // así debe estar
         }
         return result
       }
